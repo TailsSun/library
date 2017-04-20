@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>TZ</title>
+</head>
+<body>
+<p>OMG</p>
+
+<form action="/allbok" method="POST">
+    <input type="hidden" name="inf"   value="1" />
+    <input type="submit" value="Показать все книги в Библиотеке">
+</form>
+
+<form action="/allbok" method="POST">
+    <input type="hidden" name="inf"   value="2" />
+    <input type="submit" value="Показать книги в наличии">
+</form>
+
+<form action="/allbok" method="POST">
+    <input type="hidden" name="inf"   value="3" />
+    <input type="submit" value="Показать книги которые на руках">
+    <br>
+</form>
+
+<form action="/allbok" method="POST">
+    <input type="hidden" name="inf"   value="4" />
+    <input type="submit" value="Показать карту">
+    <br>
+</form>
+
+
+
+
+<form action="/alluser" method="POST">
+    <input type="hidden" name="inf"   value="1" />
+    <input type="submit" value="Показать всех людей">
+</form>
+
+
+
+
+<br>
+
+
+<fieldset>
+        <form action="/addbook" method="POST">
+        Имя книги:
+        <br>
+        <input type="text" name="book"/>
+        <br>
+        <input type="submit" value="Добавить книгу">
+        <br>
+</form>
+</fieldset>
+</form>
+
+        <br>
+<fieldset>
+    <form action="/adduser" method="POST">
+        Имя книги:
+        <br>
+        <input type="text" name="user"/>
+        <br>
+        <input type="submit" value="Добавить Читателя">
+        <br>
+    </form>
+</fieldset>
+</form>
+
+<br>
+
+<fieldset>
+
+    <form action="/getbook" method="POST">
+
+        Ваше имя:<br> <input type="text" name="name"/>
+        <br>
+        Название книги которую хотите взять:
+        <br>
+        <input type="text" name="book"/>
+        <br>
+        <input type="submit" value="Взять книгу">
+    </form>
+</fieldset>
+</form>
+
+<fieldset>
+
+    <form action="/returnbook" method="POST">
+
+        Ваше имя:<br> <input type="text" name="name"/>
+        <br>
+        Название книги которую хотите Вернуть:
+        <br>
+        <input type="text" name="book"/>
+        <br>
+        <input type="submit" value="Вернуть книгу">
+    </form>
+</fieldset>
+</form>
+
+
+</body>
+</html>
